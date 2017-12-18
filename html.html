@@ -1,0 +1,21 @@
+<!doctype=html>
+<html>
+    <head>
+        <title>JS Games</title>
+    </head>
+    <body>
+        <img src="bild.jpeg" id="img">
+        <canvas id ="canvas" Height=900px Width=900px>
+
+        </canvas>
+        <script src="js.js"></script>
+        <script>
+            window.onload = function(){
+                var canvas = document.getElementById("canvas");
+                var ctx = canvas.getContext("2d");
+                //ctx.drawImage(document.getElementById("img"),0,0);
+                createTiles();
+            }
+        </script>
+    </body>
+</html>
