@@ -4,18 +4,13 @@
         <title>JS Games</title>
     </head>
     <body>
-        <img src="bild.jpeg" id="img">
-        <canvas id ="canvas" Height=900px Width=900px>
-
-        </canvas>
+        <img src="bild.jpeg" id="img" height=0px width=0px>
+        <canvas id ="canvas" Height=900px Width=900px style="float:left;"></canvas>
+        <div>
+            <button onclick="reset()" style="margin-left:20px;">Reset</button>
+            <h1 id="counter" style="margin-left:20px;">0 Züge</h1>
+        </div>
+        
         <script src="js.js"></script>
-        <script>
-            window.onload = function(){
-                var canvas = document.getElementById("canvas");
-                var ctx = canvas.getContext("2d");
-                //ctx.drawImage(document.getElementById("img"),0,0);
-                createTiles();
-            }
-        </script>
     </body>
 </html>
